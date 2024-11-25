@@ -1,57 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tatlı Keşif - Ana Sayfa</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="logo-container">
-            <img src="./public/logo.png" alt="Tatlı Keşif Logo" class="logo">
-            <span class="brand-name">Tatlı Keşif</span>
-        </div>
+      <div class="logo-container">
+        <img src="./public/logo.png" alt="Tatlı Keşif Logo" class="logo" />
+        <span class="brand-name">Tatlı Keşif</span>
+      </div>
 
-        <div class="user-actions">
-            <a href="#signup">Üye Ol</a>
-            <a href="#login">Giriş Yap</a>
-            <a href="#submit-recipe">Tarif Gönder</a>
-        </div>
+      <div class="user-actions">
+        <a class="button" href="#signup">Üye Ol</a>
+        <a href="#login" class="button">Giriş Yap</a>
+        <a href="contact.html" class="button">Tarif Gönder</a>
+      </div>
     </header>
 
     <div class="menu">
-        <a href="#tatli-tarifleri" id="tatli-link">Tatlı Tarifleri</a>
-        <a href="#gundem-tatlilar">Gündem Tatlılar</a>
-        <div class="search-bar">
-            <input type="text" id="search-input" placeholder="Tatlı Tarifi veya Mekan Ara">
-            <button class="common-btn">🔍 Ara</button>
-        </div>
-        <div class="contact-container">
-            <button class="common-btn">Bize Ulaşın</button>
-        </div>
+      <a href="#tatli-tarifleri" id="tatli-link">Tatlı Tarifleri</a>
+      <a href="#gundem-tatlilar">Gündem Tatlılar</a>
+      <div class="search-bar">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Tatlı Tarifi veya Mekan Ara"
+        />
+        <button class="common-btn">🔍 Ara</button>
+      </div>
+      <div class="contact-container">
+        <button class="common-btn">Bize Ulaşın</button>
+      </div>
     </div>
 
     <div class="tatli-listesi" id="tatli-listesi">
-        <h3>Tatlı Türleri</h3>
-        <ul>
-            <li><a href="sutlutatlilar.html">Sütlü Tatlılar</a></li>
-            <li><a href="serbetlitatlilar.html">Şerbetli Tatlılar</a></li>
-            <li><a href="cikolatalitatlilar.html">Çikolatalı Tatlılar</a></li>
-            <li><a href="sagliklitatlilar.html">Sağlıklı Tatlılar</a></li>
-        </ul>
+      <h3>Tatlı Türleri</h3>
+      <ul>
+        <li><a href="sutlutatlilar.html">Sütlü Tatlılar</a></li>
+        <li><a href="serbetlitatlilar.html">Şerbetli Tatlılar</a></li>
+        <li><a href="cikolatalitatlilar.html">Çikolatalı Tatlılar</a></li>
+        <li><a href="sagliklitatlilar.html">Sağlıklı Tatlılar</a></li>
+      </ul>
     </div>
 
-   <!-- JavaScript -->
-   <script>
-    // Tatlı Tarifleri bağlantısını tıklama olayını yakalama
-    const tatliLink = document.getElementById("tatli-link");
-    const tatliListesi = document.getElementById("tatli-listesi");
+    <!-- JavaScript -->
+    <script>
+      // Tatlı Tarifleri bağlantısını tıklama olayını yakalama
+      const tatliLink = document.getElementById("tatli-link");
+      const tatliListesi = document.getElementById("tatli-listesi");
 
-    tatliLink.addEventListener("click", function(event) {
+      tatliLink.addEventListener("click", function (event) {
         event.preventDefault(); // Sayfa yenilenmesini engelle
-        tatliListesi.style.display = tatliListesi.style.display === "block" ? "none" : "block";
-    });
-</script>
-</body>
+        tatliListesi.style.display =
+          tatliListesi.style.display === "block" ? "none" : "block";
+      });
+    </script>
+  </body>
 </html>
