@@ -165,7 +165,6 @@ body {
     transform: translateY(0); /* Tıklayınca orijinal konuma dön */
   }
   
-  /footer/
   /* Footer Tasarımı */
   .site-footer {
       background-color: #f5e1e9; /* Header ile aynı pastel pembemsi arka plan */
@@ -274,7 +273,7 @@ body {
   
   .recipe-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
     margin-bottom: 20px;
   }
@@ -290,9 +289,11 @@ body {
   }
   
   .recipe-detail ol {
-    padding-left: 20px;
+    padding: 30px 35px 30px 35px;
     text-align: left;
     margin-bottom: 20px;
+    border: 2px solid #ff69b4;
+    border-radius: 20px 20px 20px 20px;
   }
   
   .back-btn {
