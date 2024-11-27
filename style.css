@@ -348,4 +348,49 @@ body {
     font-size: 18px;
     color: #bf360c; /* Kahverengi ton */
   }
+
+  /* Nerede Yenir? Sayfası */
+.nerede-yenir {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .nerede-yenir h3 {
+    color: #3e2723;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .mekan-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .mekan-item {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .mekan-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mekan-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .mekan-item p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #bf360c;
+    font-weight: bold;
+  }
   
