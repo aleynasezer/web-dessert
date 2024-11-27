@@ -5,13 +5,14 @@ body {
     background-color: #f8f8f8;
   }
   
-  /* Header */
-  .site-header {
+
+ /* Header */
+ .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    background: linear-gradient(to right, #ff9a9e, #fecfef);
+    background: linear-gradient(to right, #8d6e63, #d4a373);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
@@ -26,10 +27,23 @@ body {
     font-weight: bold;
   }
   
+  .user-actions a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    background: #f4e1d2;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .user-actions a:hover {
+    background: linear-gradient(to right, #cc9a48, #ffe0b2);
+  }
+  
   .common-btn {
     padding: 10px 15px;
-    background: #d8bfd8;
-    color: white;
+    background: #F4E1D2;
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -37,7 +51,7 @@ body {
   }
   
   .common-btn:hover {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #6E493A, #E1D4C1);
   }
   
   /* Menü Stili */
@@ -62,7 +76,7 @@ body {
   }
   
   .menu a:hover {
-    background-color: #ff69b4;
+    background: linear-gradient(to right, #6E493A, #E1D4C1);
     color: white;
   }
   
@@ -113,13 +127,13 @@ body {
     border: 1px solid #ddd;
     width: 90%;
     max-width: 600px;
-    background-color: #fff8f8;
+    background-color: #F4E1D2;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .tatli-listesi h3 {
     text-align: center;
-    color: #ff69b4;
+    color: #6e493a;
   }
   
   .tatli-listesi ul {
@@ -140,7 +154,7 @@ body {
   }
   
   .tatli-listesi ul li a:hover {
-    color: #ff69b4;
+    color: #987284;
   }
   
   .button {
@@ -150,25 +164,25 @@ body {
     font-weight: bold;
     text-decoration: none;
     color: #ffffff;
-    background-color: #1d4065; /* Buton rengi (mavi) */
+    background-color: #8d6e63; /* Buton rengi yeşil */
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   
   .button:hover {
-    background-color: #0056b3; /* Hover durumunda daha koyu mavi */
+    background-color: #6e493a; /* Hover durumunda daha açık yeşil */
     transform: translateY(-3px); /* Hafif bir yukarı kayma */
   }
   
   .button:active {
-    background-color: #004494; /* Aktif durumunda daha da koyu mavi */
+    background-color: #e1d4c1; /* Aktif durumunda daha da açık yeşil */
     transform: translateY(0); /* Tıklayınca orijinal konuma dön */
   }
 
   
   /* Footer Tasarımı */
   .site-footer {
-      background-color: #f5e1e9; /* Header ile aynı pastel pembemsi arka plan */
+    background: linear-gradient(to right, #8d6e63, #d4a373);
       color: #333; /* Metin rengi */
       padding: 20px 10px;
       font-family: Arial, sans-serif;
@@ -192,7 +206,7 @@ body {
   .footer-section h3 {
       font-size: 18px;
       margin-bottom: 10px;
-      color: #6a1b9a; /* Başlık rengi */
+      color: #333; /* Başlık rengi */
   }
   
   .footer-section p, .footer-section a {
@@ -203,7 +217,7 @@ body {
   }
   
   .footer-section a:hover {
-      color: #6a1b9a; /* Link hover rengi */
+      color: #f1d5b8e8; /* Link hover rengi */
       text-decoration: underline;
   }
   
@@ -213,7 +227,7 @@ body {
       border-top: 1px solid #ddd;
       padding-top: 10px;
       font-size: 12px;
-      color: #666;
+      color: #ffffff;
   }
   /* Genel Ayarlar */
   body {
@@ -222,39 +236,6 @@ body {
     background-color: #f8f8f8;
   }
   
-  /* Header */
-  .site-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 20px;
-    background: linear-gradient(to right, #ff9a9e, #fecfef);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .brand-name {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  
-  .user-actions a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 15px;
-    background: #d8bfd8;
-    border-radius: 5px;
-    transition: background 0.3s;
-  }
-  
-  .user-actions a:hover {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-  }
   
   /* Tarif Detayı Ortalama */
   .recipe-detail {
@@ -269,7 +250,7 @@ body {
   
   .recipe-detail h1 {
     font-size: 24px;
-    color: #ff69b4;
+    color: #443737;
   }
   
   .recipe-image img {
@@ -280,8 +261,10 @@ body {
   }
   
   .recipe-detail ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    border: 2px solid #443737;
+    border-radius: 20px 20px 20px 20px;
+    padding: 30px 35px 30px 35px;
   }
   
   .recipe-detail ul li {
@@ -293,7 +276,7 @@ body {
     padding: 30px 35px 30px 35px;
     text-align: left;
     margin-bottom: 20px;
-    border: 2px solid #ff69b4;
+    border: 2px solid #443737;
     border-radius: 20px 20px 20px 20px;
   }
   
@@ -302,7 +285,7 @@ body {
     display: block;
     margin-top: 20px;
     padding: 10px;
-    background: #d8bfd8;
+    background: #8d6e63;
     color: white;
     border-radius: 5px;
     text-decoration: none;
@@ -310,11 +293,11 @@ body {
   }
   
   .back-btn:hover {
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    background: linear-gradient(to right, #6e493a, #e1d4c1);
   }
 
   .comment-box {
-    border: 2px solid #c1bdbf;
+    border: 2px solid #e1d4c1;
     border-radius: 5px 5px 5px 5px;
     padding: 20px 25px 20px 25px;
   }
