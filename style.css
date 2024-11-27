@@ -17,15 +17,28 @@ body {
   }
   
   .logo {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
-  }
-  
-  .brand-name {
-    font-size: 20px;
+    width: 60px;
+    height: 60px;
+    margin-right: 5px; /* Daha yakın görünüm için küçültüldü */
+    vertical-align: middle; /* Logo ile yazıyı hizalar */
+}
+
+.brand-name {
+    font-size: 30px;
     font-weight: bold;
-  }
+    font-style: italic;
+    font-family: monospace;
+    display: inline-block; /* Logo ile aynı satırda kalmasını sağlar */
+    vertical-align: middle; /* Yazıyı logoya hizalar */
+    color: #4b2e2e; /* Varsayılan kahve tonu */
+    transition: color 0.3s ease, transform 0.3s ease; /* Hover geçiş animasyonu */
+}
+
+.brand-name:hover {
+    color: #7c4c3b; /* Daha açık kahve tonu */
+    transform: scale(1.1); /* Hover sırasında yazıyı büyütür */
+}
+
   
   .user-actions a {
     text-decoration: none;
