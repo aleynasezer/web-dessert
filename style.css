@@ -164,6 +164,7 @@ body {
     background-color: #004494; /* Aktif durumunda daha da koyu mavi */
     transform: translateY(0); /* Tıklayınca orijinal konuma dön */
   }
+
   
   /* Footer Tasarımı */
   .site-footer {
@@ -311,3 +312,11 @@ body {
   .back-btn:hover {
     background: linear-gradient(to right, #ff7e5f, #feb47b);
   }
+
+  .comment-box {
+    border: 2px solid #c1bdbf;
+    border-radius: 5px 5px 5px 5px;
+    padding: 20px 25px 20px 25px;
+  }
+
+ 
