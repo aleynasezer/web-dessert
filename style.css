@@ -302,4 +302,50 @@ body {
     padding: 20px 25px 20px 25px;
   }
 
- 
+ /* Bugün Ne Pişirsem Bölümü */
+.bugun-ne-pisirsem {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff4e6; /* Hafif turuncu ton */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .bugun-ne-pisirsem h3 {
+    color: #3e2723; /* Tatlı kahverengi */
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .tatli-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 sütunlu grid */
+    gap: 20px; /* Kartlar arası boşluk */
+  }
+  
+  .tatli-item {
+    background-color: #fff; /* Beyaz kart */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .tatli-item:hover {
+    transform: scale(1.05); /* Hoverda büyütme efekti */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .tatli-item img {
+    width: 100%; /* Resim genişliğini kutuya göre ayarla */
+    height: 200px; /* Sabit yükseklik */
+    object-fit: cover; /* Resmi kutuya sığdır */
+  }
+  
+  .tatli-item p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #bf360c; /* Kahverengi ton */
+  }
+  
