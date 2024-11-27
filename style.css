@@ -192,6 +192,40 @@ body {
     transform: translateY(0); /* Tıklayınca orijinal konuma dön */
   }
 
+  .main-content {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+  }
+  
+  /* Sol Bölüm: Gündem Tatlılar */
+  .tatli-gundem {
+    flex: 3; /* Daha geniş alan */
+  }
+  
+  /* Sağ Bölüm: Blog */
+  .blog-section {
+    flex: 1; /* Daha dar alan */
+  }
+  
+  /* Tatlılar ve Şeflerin İçerikleri */
+  .tatli-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .slider {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .slide img {
+    width: 100%;
+    border-radius: 8px;
+  }  
+  
   
   /* Footer Tasarımı */
   .site-footer {
