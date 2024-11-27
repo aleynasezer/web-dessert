@@ -393,4 +393,47 @@ body {
     color: #bf360c;
     font-weight: bold;
   }
+
+  /* Mekan kutusunun temel stilini ayarla (tariflerin altındaki mekanlar için)*/ 
+.mekanlar-item {
+    width: 250px; /* Kutunun genişliğini belirle */
+    margin: 20px; /* Kutular arasında boşluk bırak */
+    border: 2px solid #e8cca3; /* Kenarlık rengi */
+    border-radius: 10px; /* Köşeleri yuvarlat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge ekle */
+    overflow: hidden; /* İçerik taşarsa gizle */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Geçiş efekti */
+    text-align: center; /* İçeriği ortala */
+  }
+  
+  /* Resmin stilini ayarla */
+  .mekanlar-item img {
+    width: 100%; /* Resmi kutunun genişliğine uyacak şekilde ayarla */
+    height: 200px; /* Resmin yüksekliğini belirle */
+    object-fit: cover; /* Resmi orantılı şekilde kes */
+    border-bottom: 2px solid #ffffff; /* Resmin altına kenarlık ekle */
+  }
+  
+  /* Metnin stilini ayarla */
+  .mekanlar-item p {
+    padding: 10px;
+    font-size: 18px;
+    color: #333; /* Metin rengini belirle */
+    margin: 0; /* Alt boşluğu sıfırla */
+    background-color: #e8cca3; /* Arka plan rengini beyaz yap */
+  }
+  
+  /* Linkin üzerine gelindiğinde kutu büyüsün ve gölge artsın */
+  .mekanlar-item a:hover {
+    transform: translateY(-5px); /* Kutuyu hafifçe yukarı kaydır */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Gölgeyi artır */
+  }
+  
+  /* Linkin kendisinin stilini ayarla */
+  .mekanlar-item a {
+    text-decoration: none; /* Link altını çizgiyi kaldır */
+    display: block; /* Linkin tamamını blok yap */
+    color: inherit; /* Linkin rengini kalıtım alacak şekilde ayarla */
+  }
+  
   
