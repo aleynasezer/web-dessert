@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giris Yap</title>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    "
+  >
+    <div
+      style="
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 100%;
+      "
+    >
+      <form style="display: flex; flex-direction: column">
+        <h2 style="text-align: center; color: #333333; margin-bottom: 20px">
+          Giriş Yap
+        </h2>        
+        <label
+          for="description"
+          style="font-weight: bold; margin-top: 10px; color: #444444"
+          ></label
+        >
+        <textarea
+          id="description"
+          name="description"
+          placeholder="İsim/Soyisim:"
+          rows="2"
+          required
+          style="
+            width: 100%;
+            padding: 6px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 8px;
+            font-size: 15px;
+            box-sizing: border-box;
+            resize: vertical;
+          "
+        ></textarea>
+        <label
+          for="description"
+          style="font-weight: bold; margin-top: 10px; color: #444444"
+          ></label
+        >
+        <textarea
+          id="description"
+          name="description"
+          placeholder="Şifre Gir:"
+          rows="2"
+          required
+          style="
+          width: 100%;
+          padding: 6px;
+          margin-top: 5px;
+          margin-bottom: 10px;
+          border: 1px solid #cccccc;
+          border-radius: 8px;
+          font-size: 15px;
+          box-sizing: border-box;
+          resize: vertical;
+        "
+        ></textarea>
+            <button
+          type="submit"
+          style="
+            display: block;
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: #e91e63;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+          "
+        >
+      Giriş Yap
+        </button>
+      </form>
+    </div>
+    <script>
+      const submitButton = document.querySelector('button[type="submit"]');
+      submitButton.addEventListener("mouseover", function () {
+        submitButton.style.backgroundColor = "#c2185b";
+      });
+      submitButton.addEventListener("mouseout", function () {
+        submitButton.style.backgroundColor = "#e91e63";
+      });
+      submitButton.addEventListener("mousedown", function () {
+        submitButton.style.backgroundColor = "#9c1447";
+      });
+      submitButton.addEventListener("mouseup", function () {
+        submitButton.style.backgroundColor = "#c2185b";
+      });
+    </script>
+  </body>
+</html>
