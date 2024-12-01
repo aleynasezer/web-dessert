@@ -403,6 +403,9 @@ body {
   /* Sağ Bölüm: Blog */
   .blog-section {
     flex: 1; /* Daha dar alan */
+    background-color: #fff4e6; /*  blog section arka plan rengini değiştir */
+    padding: 20px;
+    border-radius: 8px;
   }
   
   /* Tatlılar ve Şeflerin İçerikleri */
@@ -416,13 +419,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
   }
-  
-  .blog img {
-    width: 100%;
-    border-radius: 8px;
-  }  
-  
   
   /* Genel Ayarlar */
   body {
