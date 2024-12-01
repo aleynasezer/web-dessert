@@ -18,7 +18,20 @@
         <a href="giris.html" class="button">Giriş Yap</a>
         <a href="contact.html" class="button">Tarif Gönder</a>
       </div>
+      <!-- Hamburger Menü -->
+      <div class="hamburger-menu" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     </header>
+    <script>
+      // Hamburger menüsüne tıklandığında menüyü açıp kapatmak için JavaScript fonksiyonu
+      function toggleMenu() {
+          const userActions = document.querySelector('.user-actions');
+          userActions.classList.toggle('active');
+      }
+  </script>
 
     <div class="menu">
       <a href="#tatli-tarifleri" id="tatli-link">Tatlı Tarifleri</a>

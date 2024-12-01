@@ -66,7 +66,49 @@ body {
   .common-btn:hover {
     background: linear-gradient(to right, #6E493A, #E1D4C1);
   }
-  
+  /* Hamburger Menü */
+.hamburger-menu {
+  display: none; /* Varsayılan olarak hamburger menü görünmesin */
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 10px; /* Hamburger menüsünü navbar'ın üst kısmına taşıyoruz */
+  right: 20px; /* Sağ tarafa hizalıyoruz */
+  z-index: 1100; /* Hamburger menüsünü navbar'ın üstüne alıyoruz */
+}
+
+.hamburger-menu div {
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+/* Media Query: Ekran küçük olduğunda hamburger menüyü göster */
+@media (max-width: 768px) {
+  .user-actions {
+      display: none; /* Küçük ekranda butonlar gizlensin */
+      flex-direction: column;
+      gap: 10px;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #f4e1d2;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 1000; /* Menü öğelerinin üstte kalması için */
+  }
+
+  .hamburger-menu {
+      display: flex; /* Hamburger menü gösterilsin */
+  }
+
+  .user-actions.active {
+      display: flex; /* Hamburger menü tıklanınca butonlar gösterilsin */
+  }
+}
   /* Menü Stili */
   .menu {
     display: flex;
@@ -77,6 +119,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0; /* Sayfayı kaydırdığınızda header'ın üstte kalmasını sağlar */
+    flex-wrap: wrap; /* Menü öğelerinin taşmasını engellemek için */
   }
   
   .menu a {
@@ -147,6 +190,40 @@ body {
   .search-bar button:hover {
     background-color: #5A3B2A; /* Hover sırasında koyu renk */
   }
+  /* Yarım ekran veya daha küçük ekran boyutlarında */
+@media (max-width: 768px) {
+  /* Menü düzenini değiştirme */
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px; /* Menü öğeleri arasındaki boşluğu ayarlama */
+  }
+
+  /* Arama çubuğunun genişliğini küçültme */
+  .search-bar {
+    width: 80%; /* Ekran boyutuna göre daha küçük */
+    margin: 10px auto; /* Ortalamak için */
+    order: 99; /* Arama çubuğunu menüde en alta taşır */
+  }
+
+  /* Menü öğelerinin stilini değiştirme */
+  .menu a {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Daha küçük ekran boyutlarında arama çubuğu stilini iyileştirme */
+  .search-bar {
+    width: 90%;
+  }
+
+  .menu a {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
 
   /* contact-container.html */
   body {
