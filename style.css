@@ -75,6 +75,8 @@ body {
     padding: 10px 20px;
     background-color: #f9f9f9;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0; /* Sayfayı kaydırdığınızda header'ın üstte kalmasını sağlar */
   }
   
   .menu a {
@@ -92,7 +94,202 @@ body {
     background: linear-gradient(to right, #6E493A, #E1D4C1);
     color: white;
   }
+
+  .search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 300px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 40px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
   
+  .search-bar input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 40px;
+    background-color: transparent;
+  }
+  
+  .search-bar input::placeholder {
+    color: #aaa;
+    font-size: 14px;
+  }
+  
+  .search-bar .search-icon {
+    font-size: 20px;
+    color: #6E493A;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .search-bar .search-icon:hover {
+    transform: scale(1.2);
+    color: #5A3B2A;
+  }
+  .search-bar button {
+    padding: 12px 20px;
+    background-color: #6E493A;
+    color: white;
+    border: none;
+    border-radius: 40px; /* Daha yuvarlak bir buton */
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-bar button:hover {
+    background-color: #5A3B2A; /* Hover sırasında koyu renk */
+  }
+
+  /* contact-container.html */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.başlık h1 {
+    color: #4b2e2e;
+    text-align: center;
+}
+
+.başlık p {
+    text-align: center;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input, 
+.contact-form select, 
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 12px;
+    background-color: #4b2e2e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-form button:hover {
+    background-color: #4b2e2e;
+}
+
+
+.social {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social h3 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+
+/* hakkımızda ve şirket info */
+.main-img {
+    width: 100%; /* Container'ın genişliğini %100 yapıyoruz */
+    max-width: 1000px; /* Maksimum genişliği sınırlıyoruz */
+    margin: 0 auto; /* Yatayda ortalamak için */
+    text-align: center; /* Resmi ortalamak için */
+}
+
+.main-img img {
+    width: 100%; /* Resmi container'ın genişliğine uyacak şekilde %100 genişlikte yapıyoruz */
+    height: auto; /* Yükseklik oranını bozmadan otomatik olarak ayarlarız */
+    display: block; /* Resmi block seviyesinde yaparak yatayda ortalanmasını sağlarız */
+}
+
+
+.company-info {
+    background-color: #f1e6d6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Şirket bilgilerinin genişliğini sınırla */
+    margin: 30px auto; /* Yatayda ortalamak için */
+}
+
+.company-info h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.company-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.8;
+}
+
+.company-info ul li {
+    font-size: 16px;
+}
+
+.company-info ul li strong {
+    font-weight: bold;
+}
+
+
+
   /* Tarif Listesi */
   .recipe-list h1 {
     text-align: center;
